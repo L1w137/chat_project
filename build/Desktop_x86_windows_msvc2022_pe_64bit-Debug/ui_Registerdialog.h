@@ -16,6 +16,7 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
@@ -30,6 +31,10 @@ public:
     QStackedWidget *stackedWidget;
     QWidget *page;
     QVBoxLayout *verticalLayout_3;
+    QWidget *widget;
+    QVBoxLayout *verticalLayout_4;
+    QSpacerItem *verticalSpacer;
+    QLabel *erro_tip;
     QHBoxLayout *horizontalLayout;
     QLabel *user_lable;
     QLineEdit *user_lineEdit;
@@ -55,7 +60,7 @@ public:
     {
         if (Register_Dialog->objectName().isEmpty())
             Register_Dialog->setObjectName("Register_Dialog");
-        Register_Dialog->resize(540, 468);
+        Register_Dialog->resize(372, 468);
         verticalLayout_2 = new QVBoxLayout(Register_Dialog);
         verticalLayout_2->setObjectName("verticalLayout_2");
         verticalLayout = new QVBoxLayout();
@@ -66,6 +71,23 @@ public:
         page->setObjectName("page");
         verticalLayout_3 = new QVBoxLayout(page);
         verticalLayout_3->setObjectName("verticalLayout_3");
+        widget = new QWidget(page);
+        widget->setObjectName("widget");
+        verticalLayout_4 = new QVBoxLayout(widget);
+        verticalLayout_4->setObjectName("verticalLayout_4");
+        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_4->addItem(verticalSpacer);
+
+        erro_tip = new QLabel(widget);
+        erro_tip->setObjectName("erro_tip");
+        erro_tip->setAlignment(Qt::AlignCenter);
+
+        verticalLayout_4->addWidget(erro_tip);
+
+
+        verticalLayout_3->addWidget(widget);
+
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
         user_lable = new QLabel(page);
@@ -94,6 +116,7 @@ public:
 
         email_lineEdit = new QLineEdit(page);
         email_lineEdit->setObjectName("email_lineEdit");
+        email_lineEdit->setMinimumSize(QSize(0, 25));
 
         horizontalLayout_2->addWidget(email_lineEdit);
 
@@ -109,6 +132,8 @@ public:
 
         pwd_lineEdit = new QLineEdit(page);
         pwd_lineEdit->setObjectName("pwd_lineEdit");
+        pwd_lineEdit->setMinimumSize(QSize(0, 25));
+        pwd_lineEdit->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
 
         horizontalLayout_4->addWidget(pwd_lineEdit);
 
@@ -124,6 +149,7 @@ public:
 
         comfirm_lineEdit = new QLineEdit(page);
         comfirm_lineEdit->setObjectName("comfirm_lineEdit");
+        comfirm_lineEdit->setMinimumSize(QSize(0, 25));
 
         horizontalLayout_5->addWidget(comfirm_lineEdit);
 
@@ -139,6 +165,7 @@ public:
 
         v_code_lineEdit = new QLineEdit(page);
         v_code_lineEdit->setObjectName("v_code_lineEdit");
+        v_code_lineEdit->setMinimumSize(QSize(0, 25));
 
         horizontalLayout_6->addWidget(v_code_lineEdit);
 
@@ -187,11 +214,12 @@ public:
     void retranslateUi(QDialog *Register_Dialog)
     {
         Register_Dialog->setWindowTitle(QCoreApplication::translate("Register_Dialog", "Dialog", nullptr));
-        user_lable->setText(QCoreApplication::translate("Register_Dialog", "\347\224\250\346\210\267\357\274\232", nullptr));
-        email_label->setText(QCoreApplication::translate("Register_Dialog", "\351\202\256\347\256\261\357\274\232", nullptr));
-        pwd_label->setText(QCoreApplication::translate("Register_Dialog", " \345\257\206\347\240\201\357\274\232", nullptr));
-        comfirm_label->setText(QCoreApplication::translate("Register_Dialog", "\347\241\256\350\256\244\357\274\232", nullptr));
-        v_code_label->setText(QCoreApplication::translate("Register_Dialog", "\351\252\214\350\257\201\347\240\201\357\274\232", nullptr));
+        erro_tip->setText(QCoreApplication::translate("Register_Dialog", "\351\224\231\350\257\257\346\217\220\347\244\272", nullptr));
+        user_lable->setText(QCoreApplication::translate("Register_Dialog", "\347\224\250\346\210\267:", nullptr));
+        email_label->setText(QCoreApplication::translate("Register_Dialog", "\351\202\256\347\256\261:", nullptr));
+        pwd_label->setText(QCoreApplication::translate("Register_Dialog", "\345\257\206\347\240\201:", nullptr));
+        comfirm_label->setText(QCoreApplication::translate("Register_Dialog", "\347\241\256\350\256\244:", nullptr));
+        v_code_label->setText(QCoreApplication::translate("Register_Dialog", "\351\252\214\350\257\201:", nullptr));
         v_code_pushButton->setText(QCoreApplication::translate("Register_Dialog", "\350\216\267\345\217\226\351\252\214\350\257\201\347\240\201", nullptr));
         confirm_pushButton->setText(QCoreApplication::translate("Register_Dialog", "\347\241\256\350\256\244", nullptr));
         cancel_pushButton->setText(QCoreApplication::translate("Register_Dialog", "\345\217\226\346\266\210", nullptr));

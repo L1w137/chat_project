@@ -383,12 +383,14 @@ Makefile: ..\..\MiniChat.pro D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\mkspecs\win3
 		..\..\MiniChat.pro \
 		D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\lib\Qt6Widgets.prl \
 		D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\lib\Qt6Gui.prl \
+		D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\lib\Qt6Network.prl \
 		D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\lib\Qt6Core.prl \
 		D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\lib\Qt6EntryPoint.prl \
 		D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\mkspecs\features\build_pass.prf \
 		..\..\rc.qrc \
 		D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\lib\Qt6Widgetsd.prl \
 		D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\lib\Qt6Guid.prl \
+		D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\lib\Qt6Networkd.prl \
 		D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\lib\Qt6Cored.prl \
 		D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\lib\Qt6EntryPointd.prl
 	$(QMAKE) -o Makefile ..\..\MiniChat.pro -spec win32-msvc "CONFIG+=debug" "CONFIG+=qml_debug"
@@ -691,12 +693,14 @@ D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\mkspecs\features\lex.prf:
 ..\..\MiniChat.pro:
 D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\lib\Qt6Widgets.prl:
 D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\lib\Qt6Gui.prl:
+D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\lib\Qt6Network.prl:
 D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\lib\Qt6Core.prl:
 D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\lib\Qt6EntryPoint.prl:
 D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\mkspecs\features\build_pass.prf:
 ..\..\rc.qrc:
 D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\lib\Qt6Widgetsd.prl:
 D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\lib\Qt6Guid.prl:
+D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\lib\Qt6Networkd.prl:
 D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\lib\Qt6Cored.prl:
 D:\WorkSpace\QT6.3.5\6.5.3\msvc2019_64\lib\Qt6EntryPointd.prl:
 qmake: FORCE

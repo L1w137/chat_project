@@ -1,0 +1,10 @@
+#user_label,#pwd_label{
+    color:black;
+}
+#erro_tip[state='normal']{
+        color:green;
+}
+#erro_tip[state='err']{
+        color:red;
+}
+

@@ -49,9 +49,9 @@ public:
     {
         if (LoginDialog->objectName().isEmpty())
             LoginDialog->setObjectName("LoginDialog");
-        LoginDialog->resize(510, 600);
-        LoginDialog->setMinimumSize(QSize(510, 600));
-        LoginDialog->setMaximumSize(QSize(510, 696));
+        LoginDialog->resize(350, 450);
+        LoginDialog->setMinimumSize(QSize(350, 450));
+        LoginDialog->setMaximumSize(QSize(350, 450));
         verticalLayout_2 = new QVBoxLayout(LoginDialog);
         verticalLayout_2->setObjectName("verticalLayout_2");
         verticalLayout = new QVBoxLayout();
@@ -63,7 +63,7 @@ public:
         horizontalLayout_2->setObjectName("horizontalLayout_2");
         label = new QLabel(widget);
         label->setObjectName("label");
-        label->setMaximumSize(QSize(450, 450));
+        label->setMaximumSize(QSize(275, 270));
         label->setPixmap(QPixmap(QString::fromUtf8(":/res/res1.png")));
         label->setAlignment(Qt::AlignCenter);
 
@@ -82,7 +82,7 @@ public:
         User_lineEdit = new QLineEdit(LoginDialog);
         User_lineEdit->setObjectName("User_lineEdit");
         User_lineEdit->setMinimumSize(QSize(0, 25));
-        User_lineEdit->setMaximumSize(QSize(437, 25));
+        User_lineEdit->setMaximumSize(QSize(276, 25));
 
         horizontalLayout->addWidget(User_lineEdit);
 
@@ -99,7 +99,7 @@ public:
         password_lineEdit = new QLineEdit(LoginDialog);
         password_lineEdit->setObjectName("password_lineEdit");
         password_lineEdit->setMinimumSize(QSize(0, 25));
-        password_lineEdit->setMaximumSize(QSize(437, 25));
+        password_lineEdit->setMaximumSize(QSize(276, 25));
 
         horizontalLayout_3->addWidget(password_lineEdit);
 

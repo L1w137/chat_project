@@ -29,15 +29,15 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(510, 600);
-        MainWindow->setMinimumSize(QSize(510, 600));
-        MainWindow->setMaximumSize(QSize(510, 697));
+        MainWindow->resize(350, 450);
+        MainWindow->setMinimumSize(QSize(350, 450));
+        MainWindow->setMaximumSize(QSize(350, 450));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 510, 25));
+        menubar->setGeometry(QRect(0, 0, 350, 25));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");

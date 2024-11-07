@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -10,14 +10,19 @@ RC_ICONS=chat_bubble.ico
 
 SOURCES += \
     Registerdialog.cpp \
+    global.cpp \
+    httpmgr.cpp \
     logindialog.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     Registerdialog.h \
+    global.h \
+    httpmgr.h \
     logindialog.h \
-    mainwindow.h
+    mainwindow.h \
+    singleton.h
 
 FORMS += \
     Registerdialog.ui \
@@ -31,3 +36,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     rc.qrc
+
+DISTFILES +=
